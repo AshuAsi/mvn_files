@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"> 
+<suite name="testngsuit">
+	<test name="status">
+		
+		 <groups>
+			 <run>
+				 <include name="regration"></include>
+					  <include name="smoke">
+					 	  
+				 </include>
+			 </run>
+		 </groups>
+		 
+				<classes>
+					
+					<class name="TestNg.Test_1">
+						<methods>
+						<include name="m3"></include>
+				
+			</methods>
+			
+						
+					</class>
+					
+			
+			<class name="TestNg.Test_2"></class>
+			<class name="TestNg.Test_3"></class>
+				</classes>	 
+			
+		</test>
+</suite> 
