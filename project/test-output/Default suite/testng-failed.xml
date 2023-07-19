@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="TestNg.TestCases_TestNG">
+        <methods>
+          <include name="empty_user_valid_pswd_Tc_06"/>
+          <include name="Valid_Credentials_Tc_02"/>
+          <include name="valid_user_empty_pswd_txbox_Tc_07"/>
+          <include name="invalid_user_valid_pswd_Tc_05"/>
+          <include name="navigate_to_the_application_Tc_01"/>
+          <include name="valid_userName_and_invalid_pswd_Tc_04"/>
+          <include name="invalid_Credentials_Tc_03"/>
+          <include name="empty_user_txbox_empty_pswd_Tc_08"/>
+        </methods>
+      </class> <!-- TestNg.TestCases_TestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
