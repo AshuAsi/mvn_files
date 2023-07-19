@@ -4,8 +4,10 @@ public class Test_cases extends Driver_class
 {
 	public static void navigate_to_the_application_Tc_01() throws Exception
 	{
+		Driver_class.WebDriver();
 		
 		Validations.loginpage(Xpath_class.login_page());
+		Driver_class.close();
 	}
       
 	public static void Valid_Credentials_Tc_02() throws Exception

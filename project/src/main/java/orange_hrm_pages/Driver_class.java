@@ -17,4 +17,8 @@ public static void WebDriver()
 	d.manage().window().maximize();
 }
 
+public static void close()
+{
+	d.close();
+}
 }
