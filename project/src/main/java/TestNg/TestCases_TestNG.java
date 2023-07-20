@@ -2,7 +2,7 @@ package TestNg;
 
 import org.testng.annotations.Test;
 
-import orange_hrm_pages.Driver_class;
+
 import orange_hrm_pages.Validations;
 import orange_hrm_pages.Xpath_class;
 
