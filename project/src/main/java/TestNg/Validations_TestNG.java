@@ -1,6 +1,7 @@
 package TestNg;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import orange_hrm_pages.Xpath_class;
 
@@ -19,31 +20,43 @@ public class Validations_TestNG extends Driver_class_testng
 		
 		}
 		
-		public static void EntertedUsername(String Username)throws Exception
+//		public static void EntertedUsername(String Username)throws Exception
+//		{
+//			if(!(Username.equals(Xpath_class.User_name().getAttribute("value"))))
+//			{
+//				throw new Exception("Enterted username is not displayed");
+//				
+//			}
+//			else
+//			{
+//				System.out.println("Entered username is displayed");
+//				
+//			}
+//		}
+		//Userid Assert method
+		public static void EntertedUsername(String Username)
 		{
-			if(!(Username.equals(Xpath_class.User_name().getAttribute("value"))))
-			{
-				throw new Exception("Enterted username is not displayed");
-				
-			}
-			else
-			{
-				System.out.println("Entered username is displayed");
-				
-			}
+			Assert.assertEquals(Xpath_class.User_name().getAttribute("value"), Username,"Enterted username is not displayed");
 		}
-			public static void enetredpassword(String password) throws Exception
-			{
-				if(!(password.equals(Xpath_class.Pass_word().getAttribute("value"))))
-				{
-					throw new Exception("Entered password is not displyed");
-				}
-				else
-				{
-					System.out.println("Entered password is displayed");
-				}
-
-			}
+		
+//			public static void enetredpassword(String password) throws Exception
+//			{
+//				if(!(password.equals(Xpath_class.Pass_word().getAttribute("value"))))
+//				{
+//					throw new Exception("Entered password is not displyed");
+//				}
+//				else
+//				{
+//					System.out.println("Entered password is displayed");
+//				}
+//
+//			}
+		
+		//password Assert method
+		public static void enetredpassword(String password)
+		{
+			Assert.assertEquals(Xpath_class.Pass_word().getAttribute("value"), password,"Entered password is not displyed");
+		}
 			public static void Dashboard_Homepage_(WebElement homepage) throws Exception
 			{
 				if(!(homepage.isDisplayed()))
