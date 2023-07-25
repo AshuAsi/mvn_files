@@ -2,7 +2,6 @@ package TestNg;
 
 import org.openqa.selenium.WebElement;
 
-import orange_hrm_pages.Driver_class;
 import orange_hrm_pages.Xpath_class;
 
 public class Validations_TestNG extends Driver_class_testng

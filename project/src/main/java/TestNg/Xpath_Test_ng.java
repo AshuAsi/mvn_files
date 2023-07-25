@@ -3,8 +3,6 @@ package TestNg;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import orange_hrm_pages.Driver_class;
-
 public class Xpath_Test_ng extends Driver_class_testng
 {
 	static By Loginpage=By.xpath("//h5[text()='Login']");
