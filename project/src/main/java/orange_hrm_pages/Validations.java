@@ -30,6 +30,7 @@ public class Validations extends Driver_class
 			
 		}
 	}
+	
 		public static void enetredpassword(String password) throws Exception
 		{
 			if(!(password.equals(Xpath_class.Pass_word().getAttribute("value"))))
