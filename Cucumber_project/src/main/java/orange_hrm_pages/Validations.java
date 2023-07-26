@@ -1,9 +1,8 @@
-package cucumber_orangeHrm;
+package orange_hrm_pages;
 
 import org.openqa.selenium.WebElement;
 
-
-public class OrangeHRM_validations extends  OrangeHRM_Driver_Class  
+public class Validations extends Driver_class
 {
 	public static void loginpage(WebElement login) throws Exception
 	{
@@ -20,7 +19,7 @@ public class OrangeHRM_validations extends  OrangeHRM_Driver_Class
 	
 	public static void EntertedUsername(String Username)throws Exception
 	{
-		if(!(Username.equals(Orange_HRM_Login_page.User_name().getAttribute("value"))))
+		if(!(Username.equals(Xpath_class.User_name().getAttribute("value"))))
 		{
 			throw new Exception("Enterted username is not displayed");
 			
@@ -31,9 +30,10 @@ public class OrangeHRM_validations extends  OrangeHRM_Driver_Class
 			
 		}
 	}
+	
 		public static void enetredpassword(String password) throws Exception
 		{
-			if(!(password.equals(Orange_HRM_Login_page.Pass_word().getAttribute("value"))))
+			if(!(password.equals(Xpath_class.Pass_word().getAttribute("value"))))
 			{
 				throw new Exception("Entered password is not displyed");
 			}
@@ -54,4 +54,5 @@ public class OrangeHRM_validations extends  OrangeHRM_Driver_Class
 				System.out.println("Home page is displayed");
 			}
 		}
+		
 }
