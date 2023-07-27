@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Driver_class
 {
 public static WebDriver d;
+
 public static void WebDriver() 
 {
 	d=new ChromeDriver();
