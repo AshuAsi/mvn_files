@@ -12,6 +12,11 @@
       <artifactId>playwright</artifactId>
       <version>1.36.0</version>
     </dependency>
+    <dependency>
+    	<groupId>ztoh</groupId>
+    	<artifactId>basic_mavenp</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>

@@ -1,6 +1,6 @@
 Feature: login
 Background:
-Given Url: "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+Given Url: "https://opensource-demo.orangehrmlive.com"
 Then orangeHrm login page is opened sucessfully
 
 Scenario: Validate login with valid credentials
